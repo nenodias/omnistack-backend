@@ -10,7 +10,7 @@ app.use(cors());
 
 io.on('connection', socket => {
     console.log('OK');
-    socket.on('connectionRoom', box => {
+    socket.on('connectRoom', box => {
         socket.join(box);
     });
 });
